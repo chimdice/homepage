@@ -1,7 +1,9 @@
+html,
 body {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .boxes {
@@ -126,7 +128,7 @@ header {
 .foot-img,
 .name-img img {
     max-height: 100%;
-    width: 300px;
+    width: 250px;
 }
 
 .name-img h1 {
@@ -144,10 +146,33 @@ header {
     padding: 30px;
    }
 
-   footer {
+footer {
     display: flex;
     background: rgb(159, 196, 226);
     padding: 50px;
     justify-content: center;
     gap: 20px;
-   }
+}
+
+@media  (max-width: 500px) {
+    
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-box {
+        width: fit-content;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
