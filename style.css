@@ -105,6 +105,7 @@ body {
 main {
     margin-left: 70px;
     margin-right: 70px;
+    margin-bottom: 70px;
 }
 
 
@@ -122,6 +123,7 @@ header {
     justify-self: end;
 }
 
+.foot-img,
 .name-img img {
     max-height: 100%;
     width: 300px;
@@ -140,4 +142,12 @@ header {
     width: 50%;
     justify-self: start;
     padding: 30px;
+   }
+
+   footer {
+    display: flex;
+    background: rgb(159, 196, 226);
+    padding: 50px;
+    justify-content: center;
+    gap: 20px;
    }
